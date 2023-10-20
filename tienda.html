@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoBlack.png">
+
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/66ea020ffa.js" crossorigin="anonymous"></script>
+    
+    <meta charset="utf-8">
+    <!--CALCULA PANTALLA-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veterinaria </title>
+
+    <!--CARRUSEL-->z
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/tienda.css">
+  
+  </head>
+  <body>
+
+    
+
+    <nav class="banner1-inicio" id="inicio">
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+        <div class="container-fluid ">
+                
+          <a class="navbar-brand left-inicio" href="#"><img src="img/logoWhite.png" alt="" style="width: 100px"></a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="collapse navbar-collapse right-inicio" id="navbarNavAltMarkup">
+
+            <div class="navbar-nav">
+
+              <!-- Paginas NAV-->
+              <a class="nav-link " href="inicio.html">Inicio</a>
+
+              <a class="nav-link" href="inicio.html">Acerca de nosotros</a>
+
+              <a class="nav-link " href="servicios.html">Servicios</a>
+
+              <a class="nav-link" href="contacto.html">Contacto</a>
+
+              <a class="nav-link " href="testimonios.html">Testimonios</a>
+
+              <!-- Para la APP-->
+              <a class="nav-link inicio-botton" href="tienda.html">Tienda</a>
+
+              <a class="nav-link nav-txt" href="agendar.html">Agendar cita</a>
+
+              <a href="#carrito">
+
+                <img class="carritoLogo" src="img/carrito-logo.png" alt="" onclick="lista()">
+
+              </a>
+    
+            </div>
+
+            <div class="container-cart-icon d-flex flex-wrap">
+         
+      
+           
+              <div class="count-products">
+                <span id="contador-productos" href="#carrito">0</span>
+              </div>
+
+            </div>
+
+            <!--CARRITO LOGO-->
+
+            
+
+
+          </div>
+        </div>
+      </nav>
+
+      
+    
+
+      <div class="btn-banner1 text-center mt-5 container">
+        <h1 class="display-4">En nuestra tienda </h1>
+        <h3 class="">encontrarás todo lo que necesitas para mantener a tu mascota <span class="text-rojo">feliz y saludable.</span></h3>
+              
+      </div>
+
+      <div class="btn-banner1 text-center mt-5 container" >
+
+        <label for="" class="text">Seleccione su mascota de preferencia</label>
+
+        <select class="form-control form-select-sm mt-3" aria-label="Default select example" id="menuOpciones" required="required" name="servicio">
+          <option selected value="">Escoge tu mascota</option>
+            
+          <option value="perros">Perros</option>
+            
+          <option value="gatos">Gatos</option>
+           
+          <option value="otro">Animales exóticos</option>
+
+          <option value="granja">Granja</option>
+          
+        </select>
+
+      </div>
+
+      <div class="container text-center">
+
+        <p class="mt-5 text-light">Danos tu correo para enviarte nuestras ofertas mensuales</p>
+
+        <form id="inscription" class="col-sm-4 text-center container ">
+          <!-- el name es el que se pone en el temaplate de emial.js-->
+          <!-- ID VA EN EL JS-->
+          <input class="email form-control form-control-sm" name="email" id="inscriptionTxt" type="email" placeholder="Ingresa tu correo electrónico">
+          <input id="btnSend" type="button" value="Enviar" class="btn btn-outline-info mt-5">
+          <!-- ID VA EN EL JS-->
+          <p id="mensajeAlert" class="text-danger-emphasis"></p>
+        </form>
+
+      </div>
+
+      
+  
+    </nav>
+
+
+    
+        
+    <!-- INICIA PAGINA-->
+    <!-- PANTALLA RESULTADO CARRITO-->
+
+    <div class="container text-center listaGeneral" id="carrito">
+
+      <div class="row align-items-center mt-5">
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <h5>Nombre</h5>
+        </div>
+        <div class="col">
+          <h5>Cantidad</h5>
+        </div>
+        <div class="col">
+          <h5>Precio</h5>
+        </div>
+        <div class="col">
+        </div>
+      </div>
+
+      <div class="linea-horizontal mt-5"></div>
+
+      <div class="row-product container-cart-products hidden-car " id="carrito">
+
+        <div class="container text-center cart-product" >
+
+          <div class="row align-items-start info-cart-product">
+           
+            <div class="col">
+              <img class="Foto-producto-carrito col" src="" style="width: 10px;">
+            </div>
+            <div class="col">
+              <span class="titulo-producto-carrito col mt-5"></span>
+            </div>
+            <div class="col">
+              <p class="cantidad-producto-carrito col mt-5"></p>
+            </div>
+            <div class="col">
+              <span class="precio-producto-carrito col mt-5"></span>
+            </div>
+            
+          </div>
+
+          <div>
+            <a class="icon-close" data-id="">X</a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="linea-horizontal mt-5"></div>
+
+      
+
+      <div id="desc" class="mt-5 descu"></div>
+
+      <div class="cart-total row mt-5">
+        <h3 class="col-6">Total:</h3>
+        <span class="total-pagar col-6"></span>
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-sm-6">
+          <a id="vaciar-carrito" class="btn btn-outline-danger mt-5" onclick="limpiarCarrito()">Vaciar carrito</a>
+        </div>
+        <div class="col-sm-6">
+          <a id="realizarCita" class="btn btn-danger mt-5" href="agendar.html" >Realizar cita</a>
+        </div>
+
+      </div>
+      
+
+    </div>
+
+
+
+
+  
+    <div class="mt-5 container-items listaProduct">
+
+      <!-----------------------------GALERIA DE PERRO-------------------------------------------->
+
+      <div class="galeriaRapida galeriaFotos fondo mb-5 text-center container" id="accesoriosPerro">
+
+        <div class="tz-gallery">
+          <div class="row">
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct1_dog.jpg">
+                  <img src="img/prodct2_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Shampoo</h5>
+  
+                <p class="price">5000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="1">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct3_dog.jpg">
+                  <img src="img/prodct3_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento</h5>
+  
+                <p class="price">3500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="2">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct4_dog.jpg">
+                  <img src="img/prodct4_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Tazon para tomar agua</h5>
+  
+                <p class="price">18000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="3">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct5_dog.jpg">
+                  <img src="img/prodct5_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Cama</h5>
+  
+                <p class="price">35000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="4">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct6_dog.jpg">
+                  <img src="img/prodct6_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Juguete de hueso</h5>
+  
+                <p class="price">3000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="5">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct7_dog.jpg">
+                  <img src="img/prodct7_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Juguete</h5>
+  
+                <p class="price">3560</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="6">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct8_dog.jpg">
+                  <img src="img/prodct8_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Peine</h5>
+  
+                <p class="price">2450</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="7">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct9_dog.jpg">
+                  <img src="img/prodct9_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Cinturon</h5>
+  
+                <p class="price">40000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="8">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct1_dog.jpg">
+                  <img src="img/prodct1_dog.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Correa</h5>
+  
+                <p class="price">8000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="9">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-------------------------------GALERIA DE GATO------------------------------------------>
+
+
+      <div class="galeriaRapida galeriaFotos fondo mb-5 text-center container" id="accesoriosGato">
+
+        <div class="tz-gallery">
+          <div class="row">
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct1_cat.jpg">
+                  <img src="img/prodct1_cat.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Juguete para gato</h5>
+  
+                <p class="price">3500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="10">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct2_cat.jpg">
+                  <img src="img/prodct2_cat.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Fuente de agua para gato</h5>
+  
+                <p class="price">18000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="11">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct3_cat.jpg">
+                  <img src="img/prodct3_cat.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento para gato</h5>
+  
+                <p class="price">9000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="12">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct4_cat.jpg">
+                  <img src="img/prodct4_cat.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Crema para gato</h5>
+  
+                <p class="price">8000</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="13">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct5_cat.jpg">
+                  <img src="img/prodct5_cat.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Snacks</h5>
+  
+                <p class="price">5500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="14">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-------------------------------------GALERIA OTRO--------------------------------------------->
+
+      <div class="galeriaRapida galeriaFotos fondo mb-5 text-center container" id="accesoriosOtro">
+
+        <div class="tz-gallery">
+          <div class="row">
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct1_otro.jpg">
+                  <img src="img/prodct1_otro.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento para tortugas</h5>
+  
+                <p class="price">2500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="15">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct2_otro.jpg">
+                  <img src="img/prodct2_otro.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Para tortugas</h5>
+  
+                <p class="price">3500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="16">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct3_otro.jpg">
+                  <img src="img/prodct3_otro.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Jaula para hamster</h5>
+  
+                <p class="price">7900</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="17">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct4_otro.jpg">
+                  <img src="img/prodct4_otro.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Correa para conejo</h5>
+  
+                <p class="price">8900</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="18">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct5_otro.jpg">
+                  <img src="img/prodct5_otro.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Casa para aves</h5>
+  
+                <p class="price">4500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="19">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+
+
+          </div>
+        </div>
+        
+      </div>
+
+      <!---------------------------------------------GRANJA---------------------------------------------->
+
+      <div class="galeriaRapida galeriaFotos fondo mb-5 text-center container" id="granja">
+
+        <div class="tz-gallery">
+
+          <div class="row">
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct1_granj.jpg">
+                  <img src="img/prodct1_granj.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento de caballo</h5>
+  
+                <p class="price">29500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="20">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+  
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct2_granj.jpg">
+                  <img src="img/prodct2_granj.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento para vacas</h5>
+  
+                <p class="price">25500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="21">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct3_granj.jpg">
+                  <img src="img/prodct3_granj.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento para gallinas</h5>
+  
+                <p class="price">10500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="22">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+  
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct4_granj.jpg">
+                  <img src="img/prodct4_granj.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Alimento para pavos</h5>
+  
+                <p class="price">4500</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="23">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+            <div class="card col-sm-12 col-md-6 col-lg-4 tarjetaProduct mt-5" >
+
+
+              <div class="card-body info-product">
+
+                <a href="img/prodct5_granj.jpg">
+                  <img src="img/prodct5_granj.jpg" class="card-img-top Foto-producto-carrito" alt="..." href="img/prodct2_dog.jpg">
+                </a>
+  
+                <h5 class="card-title">Jaula grande para aves</h5>
+  
+                <p class="price">25450</p>
+  
+                <a class="btn-add-cart btn btn-outline-danger " data-id="24">Agregar al carrito</a>
+
+
+              </div>
+              
+            </div>
+
+
+          </div>
+      </div>
+
+    </div>
+
+
+
+    <!-- FOOTER-->
+
+    <div class="footer-principal container-fluid row mt-5">
+
+        <div class="parte1-footer mt-5">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+  
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+  
+            <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+        </div>
+  
+  
+        <div class="text-center parte2-footer">
+          <img src="img/logoWhite.png" alt="" style="width: 100px">
+        </div>
+  
+        <div class="text-center parte3-footer">
+          <h5 class="contacto_F">Contáctanos</h5>
+          <p>veterinaria@gmail.com</p>
+          <p>2336 7820</p>
+          <p>Costa Rica, San Rafael Abajo, Desamparados</p>
+  
+        </div>
+  
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    <!-- CARRUSEL-->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <!-- JS galeria fotos para generar una galeria guarda las fotos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+
+    <!-- baguetteBox.run ejecutar la galeria es para guardar las fotos-->
+
+    <script>
+      baguetteBox.run('.tz-gallery');
+    </script>
+
+
+
+      <!-- cargar libreria EMAILJS -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+      <script src="js/wow.min.js"></script>
+
+      <script>
+        new WOW().init();
+      </script>
+   
+
+
+
+
+
+      <script src="js/prueba.js"></script>
+      <script src="js/menu.js"></script>
+      <!--<script src="js/carrito.js"></script>--->
+
+    
+  
+  
+    
+
+
+    <!-- librerias-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      Swal.fire({
+        title: 'Bienvenido a nuestra tienda!',
+        html: '<iframe src="https://embed.lottiefiles.com/animation/78817"></iframe>',
+        text: "Un momento por favor...",
+      })
+    </script>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+    
+
+    
+
+ 
+
+    
+  </body>
+</html>

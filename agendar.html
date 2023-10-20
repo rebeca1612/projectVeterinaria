@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <link rel="shortcut icon" type="image/x-icon" href="img/logoBlack.png">
+
+  <meta charset="utf-8">
+  <!--CALCULA PANTALLA-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veterinaria </title>
+
+
+  <!--ANIMATE-->
+  <link
+  rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/agendar.css">
+</head>
+
+<body>
+
+
+
+  <nav class="banner1-inicio" id="inicio">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+      <div class="container-fluid ">
+
+        <a class="navbar-brand left-inicio" href="#"> <img src="img/logoWhite.png" alt="" style="width: 100px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse right-inicio" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+
+            <!-- Paginas NAV-->
+            <a class="nav-link menuHome" href="inicio.html ">Inicio</a>
+
+            <a class="nav-link nav2" href="inicio.html">Acerca de nosotros</a>
+
+            <a class="nav-link nav3" href="servicios.html">Servicios</a>
+
+            <a class="nav-link nav4" href="contacto.html">Contacto</a>
+
+            <a class="nav-link  nav5" href="testimonios.html">Testimonios</a>
+
+            <!-- Para la APP-->
+            <a class="nav-link nav-txt nav6" href="tienda.html">Tienda</a>
+
+            <a class="nav-link inicio-botton" href="agendar.html">Agendar cita</a>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="langWrap d-flex">
+        <li class="nav">
+
+          <!-- atributo language -->
+          <a href="#" language='espanish' class="active"><img class="img-fluid" src="img/espana.png" alt="Español"
+              style="width: 35px;"></a>
+
+        </li>
+
+        <li class="nav">
+          <!-- atributo language -->
+          <a href="#" language='english'> <img class="img-fluid" src="img/USA.png" alt="Ingles"
+              style="width: 35px;"></a>
+
+        </li>
+
+      </div>
+
+    </nav>
+
+    <div class="btn-banner1 text-center mt-5 ">
+      <h1 class="display-4">¡Agenda una cita para tu amigo peludo </h1>
+      <h3 class="">hoy mismo y bríndale<span class="text-rojo"> la mejor atención en nuestra veterinaria!</span></h3>
+
+    </div>
+
+  </nav>
+
+
+
+
+  <!-- INICIA PAGINA-->
+
+  <section id="resumen" class="container-fluid fondo2 text-center sct-reservaciones">
+
+    <h2 class="titform1 margin">Formulario para realizar cita</h2>
+    <p class="">
+      Por favor llena el formulario para poder completar tu reservacion.
+    </p>
+    <div class="pt-5"></div>
+
+
+    <form class="" id="form1">
+
+
+      <div class="row">
+
+        <div class="col-md-6 mt-5">
+
+          <!--NOMBRE-->
+          <div class="form-floating">
+
+          <input type="text" class="form-control form-control-sm" id="name" placeholder="Escriba su nombre" name="name"
+          required="required">
+
+          <label for="floatingInputGrid" class="nombre">Escribe tu nombre aquí</label>
+
+        </div>
+
+        <br>
+
+        <div class="form-floating">
+
+          <input type="text" class="form-control form-control-sm" id="dog"placeholder="Escribe el nombre de tu mascota aqui" name="dog" required="required">
+
+          <label for="floatingInputGrid" class="nombre" id="nombreMascota">Escribe el nombre de tu mascota aqui</label>
+
+        </div>
+
+        <br>
+
+        <div class="form-floating">
+
+          <input type="gmail" class="form-control" id="emailTxt" placeholder="Escriba tu correo" name="email" required="required">
+
+          <label for="floatingInputGrid" class="correo">Escribe tu correo aquí</label>
+        </div>
+
+        <div class="form-floating mt-4">
+          <input type="number" class="form-control" id="numberTxt" placeholder="Escriba su nombre" required="required"
+            name="numero">
+          <label for="floatingInputGrid" class="numero">Escribe tu numero aquí</label>
+        </div>
+
+      </div>
+
+      <div class="col-md-6 text2-princ-contacto">
+
+        <!--NOMBRE-->
+
+        <label for="" class="">Elige el servicio que buscas</label>
+
+        <select class="form-control form-control-lg mt-3" aria-label="Default select example" id="vetTxt"
+          required="required" name="servicio">
+          <option selected disabled>Servicios</option>
+          <option selected value="Cardiologia" class="op1_c">Cardiología</option>
+          <option value="Radiologia" class="op2_c">Radiología</option>
+          <option value="Cirugia" class="op3_c">Cirugía</option>
+          <option value="Limpieza" class="op4_c">Limpieza dental</option>
+          <option value="Grooming" class="op6_c">Grooming</option>
+          <option value="Consulta Medica" class="op6_c">Consulta medica</option>
+        </select>
+
+        <br>
+
+        <div class="mb-3 ">
+          <div>
+            <label for="hora">Reserva la hora</label>
+            <input type="time" class="form-control" id="hora" name="hora">
+          </div>
+
+          <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" class="form-control" id="fecha" name="fecha">
+          </div>
+
+        </div>
+
+        <div class="mb-3 ">
+          <label for="exampleFormControlTextarea1" class="form-label c_txt2">Cuentanos un poco más acerca del servicio
+            que deseas</label>
+          <p>* Espacio a rellenar opcional</p>
+          <textarea class="form-control mt-3" name="message" required="required" id="mensajeTxt"></textarea>
+        </div>
+
+        
+
+      </div>
+
+
+      <div class="row mt-5">
+
+        <div class="col-sm-6" class="">
+
+          <h4 for="" class="txtLugar">Elige el lugar mas cercano a tu ubicación</h4>
+
+          <select id="lugares" class="form-control form-control-lg mt-3" name="places">
+            <option selected disabled>Lugares</option>
+            <option value="alajuela">Alajuela</option>
+            <option value="sanjose">San jose</option>
+            <option value="heredia">Heredia</option>
+          </select>
+
+        </div>
+
+        <div class="col-sm-6 lugarimg">
+          <img alt="" id="imagenLugar" src="img/lugares_agendar.jpg.gif" class="imagenLugar">
+        </div>
+
+      </div>
+
+      <div class="row mt-5">
+
+        <div class="col-sm-6" class="">
+
+          <h4 for="" class="txtLugar">Personal elegido</h4>
+          <h5 class="personalElegido" id="personalElegido"></h5>
+
+        </div>
+
+        <div class="col-sm-6 lugarPersonal">
+          <img alt="" id="personalImg" src="img/personal_agenda.png" class="personalImg">
+        </div>
+
+      </div>
+      
+    </form>
+
+
+    <div class="codigoDesc container-fluid animate__animated animate__bounce">
+      <h5 class="fs-4">¿Tienes un código de descuento? </h5>
+      <p>Ingrésalo aquí</p>
+
+      <div class="col-sm-5 container text-center">
+        <input class="form-control form-control-sm" type="number" name="desc" id="desc" placeholder="Ingresa tu numero de descuento aquí">
+        <a class="btn btn-dark mt-5" onclick="descu()">Verificar descuento aquí</a>
+      </div>
+
+      
+
+    </div>
+
+    <div class="container mt-5 row">
+
+      <div class="totalTxt col-sm-3 mt-3">
+        <label for="">Servicio a cancelar</label>
+        <p id="totalPagarVet" name="cancelar">0</p>
+      </div>
+
+      <div class="totalCarritoTxt col-sm-3 mt-3">
+        <label for="">Total a cancelar de tu carrito de compras</label>
+        <p id="totalPagarCarrito" name="cancelar">0</p>
+      </div>
+
+      <div class="totalCarritoG col-sm-3 mt-3">
+        <label for="">Total a cancelar</label>
+        <p id="totalPagarGeneral">0</p>
+      </div>
+
+      <div class="totalCarritoDes col-sm-3 mt-3">
+        <label for="">Con descuento</label>
+        <p id="totalPagarDesc">0</p>
+      </div>
+
+    </div>
+
+
+    <div class="d-grid gap-2 d-md-block mt-5">
+
+      <button onclick="limpiar()" class="btn btn-outline-dark btn_c" type="button">Limpiar</button>
+
+      <button onclick="enviar()" class="btn btn-outline-danger btn_c" type="button">Realizar cita</button>
+
+      <p class="mt-3" id="mensajeAlert"></p>
+
+    </div>
+
+  </section>
+
+
+
+  <div class="pt-5 carruselPequeno mt-5" id="carruselPequeno">
+    <div class="container text-center">
+
+
+      <h1 class="fs-3">Hecha un vistazo a nuestra tienda</h1>
+      <p>
+        <img src="img/prodct1_cat.jpg" name="thumb" id="imagenes" class="img-fluid" height="350px" width="350px"><br><br>
+
+        <a href="tienda.html#accesoriosPerro" id="titulo" class="txtCarruselPeque fs-4"></a>
+      </p>
+      <p class="pt-5">
+        <!-- Botones Anterior/Siguiente -->
+        <button class="btn btn-outline-secondary" onclick="cambiar(-1)">Anterior</button>
+        <button class="btn btn-outline-info" onclick="cambiar(1)">Siguiente</button>
+      </p>
+    </div>           
+  </div>
+
+  
+
+
+  <div class="footer-principal container-fluid row">
+
+    <div class="parte1-footer mt-5">
+      <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+
+      <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+
+      <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+    </div>
+
+
+    <div class="text-center parte2-footer">
+      <img src="img/logoWhite.png" alt="" style="width: 100px">
+    </div>
+
+    <div class="text-center parte3-footer">
+      <h5 class="contacto_F">Contáctanos</h5>
+      <p>veterinaria@gmail.com</p>
+      <p>2336 7820</p>
+      <p>Costa Rica, San Rafael Abajo, Desamparados</p>
+
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <script src="js/agendar.js"></script>
+  <script src="js/agendarLugar.js"></script>
+  
+
+  <!-- cargar libreria EMAILJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script src="js/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+  </script>
+
+
+  <!-- librerias-->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+
+</body>
+
+</html>

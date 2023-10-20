@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/logoBlack.png">
+
+    <!--ANIMACION DE ANIMATE.CSS-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!--carrusel-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+				
+    
+    <meta charset="utf-8">
+    <!--CALCULA PANTALLA-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veterinaria </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/66ea020ffa.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="css/servicios.css">
+  </head>
+
+    <body id="inicio">
+
+      <nav class="banner1-inicio" data-vide-bg="video/fondo1-inicio.mp4" id="inicio">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bannera-inicio">
+
+          <div class="container-fluid ">
+            
+            <a class="navbar-brand left-inicio" href="#"> <img src="img/logoWhite.png" alt="" style="width: 100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse right-inicio " id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+
+                <!-- Paginas NAV-->
+                <a class="nav-link menuHome" href="inicio.html">Inicio</a>
+
+                <a class="nav-link  logoText nav2" href="inicio.html">Acerca de nosotros</a>
+
+                <a class="nav-link tp2 inicio-botton nav3" href="servicios.html">Servicios</a>
+
+                <a class="nav-link nav4" href="contacto.html">Contacto</a>
+
+                <a class="nav-link nav5" href="testimonios.html">Testimonios</a>
+
+                <!-- Para la APP-->
+                <a class="nav-link nav-txt nav6" href="tienda.html">Tienda</a>
+
+                <a class="nav-link nav-txt nav7" href="agenda.html">Agendar cita</a>
+                    
+                <!-- LENGUAJE-->
+                    
+                    
+
+              </div>
+                
+            </div>
+
+          </div>
+
+            <div class="langWrap d-flex">
+              <li class="nav">
+    
+                <!-- atributo language -->
+                <a href="#" language='espanish' class="active"><img class="img-fluid" src="img/espana.png" alt="Español" style="width: 35px;"></a>
+
+              </li>
+    
+                
+              <li class="nav">
+                <!-- atributo language -->
+                  
+                <a href="#" language='english'> <img class="img-fluid" src="img/USA.png" alt="Ingles" style="width: 35px;"></a>
+                
+              </li>
+
+            </div>
+
+        </nav>
+
+        <!-- TEXTO-->
+        <div class="btn-banner1 text-center mt-5 container">
+          
+          <h1 class="display-2 txt0_S animate__bounceIn animate__animated">Nuestros <span class="text-rojo animate__shakeX animate__bounceIn">servicios</span></h1>
+
+          <h5 class="txt2_S">Porque sabemos que tu mascota es parte de tu familia, nos encargamos de su salud con el mismo amor y cuidado que tú le brindas.</h5>
+        </div>
+
+       
+      </nav>
+
+        
+        <!-- INICIA PAGINA-->
+         
+        <div class="content-fluid text-center mt-5 banner1-servicios">
+            <div>
+              <h1 class="text-marino txt3_S">Servicios de veterinaria</h1>
+                
+            </div>
+        </div>
+
+        <div class="linea-horizontal mt-5"></div>
+
+
+        <div class="text-center container">
+
+          <div class="tab tam1 mt-5 container-fluid text-center row">
+            <button class="tablinks col-md-4" onclick="opciones(event,'card')">Cardiología</button>
+            <button class="tablinks col-md-4" onclick="opciones(event,'radiologia')">Radiología</button>
+            <button class="tablinks col-md-4" onclick="opciones(event,'cirugia')">Cirugía</button>
+  
+          </div>
+
+
+
+        </div>
+        
+
+        <div class="container text-center vet-servicios tabcontent"  id="card">
+          <div class="vet-1">
+            <div class="">
+              <h2 class="txt-servicios Cardiologia">Cardiología</h2>
+              <p class="card-text Cardiologia1 mt-3">Servicio especializado en Cardiología, Ecocardiografía Bidimensional, Presión arterial y Termografía.</p>
+            </div>
+            <div class="precio-servicios mt-5 Cardiologia3">
+              <a href="">Desde ₡ 50,000 </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container text-center vet-servicios tabcontent" id="radiologia">
+          <div class="vet-2">
+            <div class="">
+              <h2 class="txt-servicios Radiologia">Radiología</h2>
+              <p class="mt-3 Radiologia1">El servicio de radiología digital lo que permite disponer de imágenes de alta calidad en cuestión de minutos. Nuestros profesionales y el personal auxiliar le ofrecerán un servicio excelente a tu mascota.</p>
+              
+            </div>
+
+            <div class="precio-servicios mt-5 Radiologia3">
+              <a href="">Desde ₡ 30,000 </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container text-center vet-servicios tabcontent" id="cirugia" >
+          <div class="vet-3">
+            <div class="">
+              <h2 class="txt-servicios cirugia">Cirugía</h2>
+              <p class="card-text mt-3 cirugia1">Los cirujanos veterinarios tienen a tu disposición quirófanos completamente equipados con máquinas de anestesia inhalatoria y monitorización para el control de las constantes vitales.</p>
+            </div>
+
+            <div class="precio-servicios mt-5 cirugia3">
+              <a href="">Desde ₡ 70,000 </a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        
+      
+        <div class="container text-center mt-5 banner2-servicios animate__shakeX animate__animated">
+          <h1 class="text-marino conocenos " >¡Conócenos!</h1>
+          <br>
+          <h4 class="nuestro personal">Conocé a nuestro personal</h4>
+        </div>
+
+      <!-- INICIA CARRUSEL-->
+
+      <section id="s1" class="container-fluid fondotira text-center">
+
+        <div class="container pt-5">
+
+          <div class="carrusel text-center">
+              
+            <div class="item text-center container mt-3">
+                    
+              <div class="">
+
+                <img src="img/carrusel1-servicios.png" alt="">
+          
+              </div>
+  
+              <div class="">
+                <h4 class="personal1_1">Alejandra de Radiología</h4>
+                <p class="p1 text-center personal1_2">
+                  Alejandra es un médico radiólogo altamente capacitado y experimentado. Se graduó de la facultad de medicina con honores y ha trabajado en varias clínicas y hospitales en su carrera. 
+                </p>
+              </div>
+  
+            </div>
+      
+            <div class="item mt-3">
+
+              <img src="img/carrusel2-servicios.png" alt="">
+              
+              <div class="">
+                <h4 class="personal2_1">Andrea de Cardiología</h4>
+                <p class="p1 text-center personal2_2">
+                  Andrea es una cardióloga con una amplia experiencia en el diagnóstico y tratamiento de enfermedades del corazón.
+                </p>
+              </div>
+
+            </div>
+      
+            <div class="item mt-3">
+
+              <img src="img/carrusel3-servicios.png" alt="">
+
+              <div class="">
+                <h4 class="personal3_1">Dra. Laura Torres de Cirugía</h4>
+                <p class="p1 text-center personal3_2">
+                  La Dra. Laura Torres es una cirujana experimentada y altamente capacitada. Ha trabajado en varios hospitales y centros médicos
+                </p>
+              </div>
+
+            </div>
+      
+            <div class="item mt-3">
+
+              <div class="">
+                <img src="img/carrusel4-servicios.png" alt="">
+              </div>
+
+              <div class="">
+                <h4 class="personal4_1">Ms. Julia Sanchez de Peluquera canina</h4>
+                <p class="p1 text-center personal4_2">
+                  La Sra. Julia Sánchez es una peluquera canina experimentada y altamente capacitada. Tiene una amplia experiencia en la realización de una variedad de servicios de peluquería canina, incluyendo cortes de pelo, baños y peinados. 
+                </p>
+              </div>
+
+            </div>
+        
+            <div class="item mt-3">
+
+              <div class="">
+                <img src="img/carrusel5servicios.png" alt="">
+              </div>
+
+              <div class="">
+                <h4 class="personal5_1">Armando Sanchez de limpieza dental</h4>
+                <p class="p1 text-center personal5_2">
+                  Armando ha estado trabajando con animales durante varios años y ha adquirido habilidades y conocimientos especializados en la limpieza dental canina.
+                </p>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </section>
+        
+      
+      <!-- INICIA Grooming profesiona-->
+
+      
+
+
+      <div class="content-fluid text-center mt-5 banner2-servicios">
+        <div>
+          <h1 class="text-marino grooming_S" >Grooming profesional</h1>
+        </div>
+      </div>
+
+      <div class="linea-horizontal mt-5"></div>
+
+      <div class="text-center container mt-5">
+
+        <div class="tab tam1 mt-5 container-fluid text-center row">
+          <button class="tablinks col-md-4" onclick="opciones(event,'limpieza')">Limpieza dental</button>
+          <button class="tablinks col-md-4" onclick="opciones(event,'groming')">Grooming</button>
+          <button class="tablinks col-md-4" onclick="opciones(event,'bano')">Baño</button>
+
+        </div>
+
+      </div>
+
+
+      <div class="container text-center vet-servicios tabcontent" id="limpieza" >
+        <div class="vet-4">
+          <div class="">
+            <h2 class="txt-servicios limpieza">Limpieza dental</h2>
+            <p class="mt-3 limpieza2"> eliminamos la placa dental sin dañar el esmalte, reduciendo el sangrado de encías y obteniendo una limpieza profunda incluso en áreas difíciles.</p>
+          </div>
+          <div class="precio-servicios mt-5 limpieza3">
+            <a href="">Desde ₡ 10,000</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center vet-servicios tabcontent" id="groming">
+        <div class="vet-5">
+          <div class="">
+            <h2 class="txt-servicios grooming_1">Grooming</h2>
+            <p class="mt-3 grooming_2">Contamos con instalaciones de primera y profesionales locales destacados en la estética comercial, exposición canina y docencia para la capacitación de nuevos talentos por medio de la Escuela de Grooming que funciona en nuestras sedes.</p>
+            
+          </div>
+
+          <div class="precio-servicios mt-5 grooming_3">
+            <a href="">Desde ₡ 15,000 </a>
+          </div>
+
+        </div>
+      </div>
+
+      
+      <div class="container text-center vet-servicios tabcontent" id="bano">
+        <div class="vet-6">
+          <div class="">
+            <h2 class="txt-servicios bano">Baño</h2>
+            <p class="card-text mt-3 bano2">Contamos con instalaciones de primera y profesionales locales destacados en la estética comercial, exposición canina y docencia para la capacitación de nuevos talentos por medio de la Escuela de Grooming que funciona en nuestras sedes.</p>
+          </div>
+
+          <div class="precio-servicios mt-5 bano3">
+            <a href="" class="">Desde ₡ 7,000 </a>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid mt-5 banner3-servicios ">
+
+          <div class="row">
+
+            
+
+
+          </div>
+      </div>
+
+      
+      <div class="mt-5 banner4-servicios container text-center">
+        <a href="agendar.html" class="btn btn-outline-info btn-lg bnt_S">Haz una cita con nosotros</a>
+      </div>
+
+      <a id="flechabtn" class="goto-top" href="#inicio" title="Ir al inicio" data-scroll>
+
+        <img src="img/Scroll.png" class="img-fluid" alt="fecha para ir arriba" style="width:60px">
+
+      </a>
+       
+
+      <div class="footer-principal container-fluid row">
+        
+        <div class="parte1-footer mt-5">
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></i>
+
+          <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+
+          <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="text-center parte2-footer">
+          <img src="img/logoWhite.png" alt="" style="width: 100px">
+        </div>
+
+        <div class="text-center parte3-footer">
+          <h5 class="contacto_F">Contáctanos</h5>
+          <p>veterinaria@gmail.com</p>
+          <p>2336 7820</p>
+          <p>Costa Rica, San Rafael Abajo, Desamparados</p>
+
+        </div>
+
+      </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+        <script src="js/servicios.js"></script>
+        <script src="js/idioma-servicios.js"></script>
+
+
+        <!-- carrusel-->
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   
+
+
+        <script>
+          
+
+          //llama a clases o id $
+        
+          $(document).ready(function(){
+            $('.carrusel').slick({
+              dots: false,
+              autoplay: true,
+              autoplayspeed: 1000,
+              infinite: true,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+            });
+
+          });
+	
+        </script>
+
+        <!-- Scrolltop-->
+          <script src="js/smooth-scroll.min.js"></script>
+          <script src="js/scrolltop.js"></script>
+
+
+
+        <script>
+          smoothScroll.init({
+          selector: '[data-scroll]', 
+          selectorHeader: null, 
+          speed:5000, 
+          easing: 'easeInOutCubic', 
+          offset: 0, 
+          callback: function ( anchor, toggle ) {} 
+        });
+        </script>
+        
+        
+
+
+
+        <!-- librerias-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+ 
+
+    
+    </body>
+</html>
