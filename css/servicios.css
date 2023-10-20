@@ -1,0 +1,397 @@
+/* SCROLL */
+
+html {
+    /*comportamiento suave del scroll*/
+    scroll-behavior: smooth;
+}
+
+
+/* MENU */
+.nav{
+    width: 100%;
+    
+}
+
+.right-inicio{
+    width: 70%;
+    
+    
+}
+.right-inicio a{
+    padding-left: 10px;
+    color: aliceblue;
+}
+.navbar-nav .inicio-botton{
+    color: #de787d;
+}
+
+.left-inicio{
+    width: 50%;
+   
+}
+
+.tienda-nav, .agendar-nav {
+    color: #C3FFF3;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+.right-inicio .nav-txt{
+    margin-left: 5px;
+    font-size: 21px;
+    color: #C3FFF3;
+}
+
+.banner1-inicio{
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/menu-servicios.jpg);
+    width: 100%;
+    height: 469px;
+    background-size: cover;
+    background-position-y: 20%;
+    
+}
+
+.btn-banner1 {
+    color: #fff;
+}
+
+.btn-banner1 a{
+    text-align: center;
+    background-color: rgb(40, 159, 159);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 24px;
+    transition: border-radius .5s;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    
+}
+.btn-banner1:hover a {
+    border-radius: 50px;
+}
+@media (max-width: 767px) {
+    .btn-banner1 h1{
+        display: none;
+    }
+    .btn-banner1 h5{
+        display: none;
+    }
+   
+}
+
+
+/* foooter principal */
+
+.footer-principal{
+    background-color: #3E3B3B;
+    padding: 25px;
+}
+.parte1-footer, .parte2-footer, .parte3-footer{
+    width: 30%;
+    color: #fff
+}
+.linea-horizontal{
+    border-top: 2px solid #b8575e;
+    margin: auto; 
+    width: 50%; 
+    padding: 0; 
+}
+.parte1-footer i{
+    padding-left: 30px;
+}
+  
+
+
+/* Scroltop */
+
+.html {
+    scroll-behavior: smooth;
+}
+  
+.goto-top{
+    position:fixed;
+    bottom:20px;
+    right: 50px;
+}
+.text-rojo{
+
+    color: #C3FFF3;
+    font-weight: bold;
+    
+}
+
+.nav{
+    padding: 20px
+}
+  
+
+
+
+/* Inicio de pagina*/
+
+.text-marino{
+    color: #50b4ad;
+}
+
+.banner1-servicios{
+    padding-top: 100px;
+}
+
+.text-rojo {
+    color: #de787d;
+    font-weight: bold;
+
+}
+
+.precio-servicios a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b8575e;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 16px;
+    border: none;
+    
+   
+}
+
+
+.vet-1 {
+
+    height: 350px;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/cardiologia-servicios.jpg);
+    position: relative;
+    background-size: cover;
+    background-position-y: center;
+}
+
+.vet-1 h2{
+    margin-top: 0px;
+    padding-top: 150px;
+   
+}
+
+
+
+.vet-2{
+    height: 350px;
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/radiologia-servicios.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position-y: center;
+
+}
+.vet-2 p{
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.vet-2 h2{
+    padding-top: 150px;
+}
+
+
+
+.vet-3{
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/cirugia-servicios.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position-y: center;
+
+}
+
+.vet-3 h2{
+    padding-top: 150px;
+}
+.vet-3 p{
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+.banner2-servicios{
+    padding-top: 50px;
+}
+
+.personal-servicios img{
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+
+}
+
+.vet-4{
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/dental-servicios.jpg);
+    transition: opacity 0.5s ease-in-out;
+    height: 350px;
+    background-size: cover;
+    background-position-y: center;
+
+}
+.vet-4 h2{
+    padding-top: 150px;
+}
+
+
+.vet-5{
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/grooming-servicios.jpg);
+    transition: opacity 0.5s ease-in-out;
+    height: 350px;
+    background-size: cover;
+    background-position-y: center;
+}
+.vet-5 h2{
+    padding-top: 150px;
+}
+
+.vet-6{
+    color: #fff;
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/baño-servicios.jpg);
+    transition: opacity 0.5s ease-in-out;
+    height: 350px;
+    background-size: cover;
+    background-position-y: center;
+}
+.vet-6 h2{
+    padding-top: 150px;
+}
+
+
+
+.banner4-servicios{
+    padding: 100px;
+}
+
+
+/*--------  CARRUSEL ------- */
+
+.item img{
+    width: 300px;
+    height: auto;
+}
+
+.slick-arrow {
+    width: 100px;
+    height: 100px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    top: -56px;
+    right: 50px;
+}
+
+.slick-prev{
+    right: 30px;
+    background: none;
+    background-size: 100%;
+    border: none;
+}
+
+.slick-next{
+    right: -100px;
+    top: 30%;
+    bottom: 0px;
+    margin-top: 0;
+    background: url("../img/arrow-next.png");
+    background-size: 100%;
+    border: none;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+/*-------- Pestañas ------- */
+
+/* propiedades de la caja del tabulador */
+.tab {
+    overflow: hidden;
+    border: solid #ccc;
+    /*color de la barra principal del tabulador*/
+    /*background-color: #f1f1f1;*/
+}
+  
+.p{
+    font-size: 20px;
+    text-align: left;
+}
+  
+.tam1{
+    display: center;
+    font-size: 18px;
+}
+  
+/* controla propiedades de los TABS */
+.tab button {
+    background-color: inherit;
+    float: left;
+    color:#000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+/* controla el color sobre los TABS */
+.tab button:hover {
+    background-color: #b8575e;
+    color:#fff;
+}
+  
+/* controla el color activo de los TABS */
+.tab button.active {
+    background-color: #50b4ad;
+    color:#fff;
+}
+  
+  
+/* controla el contenido de cada pestaña tab */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid #ccc;
+    border-top: none;
+    background: #eee;
+}
+  
+  
+  
+/* El efecto de desvanecimiento tarda 1 segundo */
+.tabcontent {
+    animation: efect1 2s; 
+  }
+  @keyframes efect1 {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

@@ -1,0 +1,43 @@
+
+.principal{
+	height: 100vh;
+}
+
+.letra h1{
+    padding-top: 10%;
+    color: rgb(34, 224, 224);
+    font-size: 80px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+
+}
+.letra h2{
+
+    color: white;
+    font-size: 40px;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+}
+
+a{
+    text-align: center;
+    background-color: rgb(40, 159, 159);
+    color: white;
+    margin: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin: 30px;
+    font-family: arial;
+    font-size: 18px;
+    transition: border-radius .5s;
+    border: none;
+    text-decoration: none;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+
+}
+
+a:hover {
+    border-radius: 50px;
+}
+

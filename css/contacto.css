@@ -1,0 +1,196 @@
+/* SCROLL */
+
+html {
+    /*comportamiento suave del scroll*/
+    scroll-behavior: smooth;
+}
+
+
+/* MENU */
+.nav{
+    width: 100%;
+    
+}
+
+.right-inicio{
+    width: 70%;
+    
+    
+}
+.right-inicio a{
+    padding-left: 10px;
+    color: aliceblue;
+}
+.navbar-nav .inicio-botton{
+    color: #de787d;
+    
+}
+
+.left-inicio{
+    width: 50%;
+   
+}
+
+.tienda-nav, .agendar-nav {
+    color: #C3FFF3;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+.right-inicio .nav-txt{
+    margin-left: 5px;
+    font-size: 21px;
+    color: #C3FFF3;
+}
+
+.banner1-inicio{
+    margin-top: 0px;
+    padding-top: 0px;
+    background-image: url(../img/menu-contacto.jpg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position-y: center;
+    
+}
+
+.btn-banner1 {
+    color: #fff;
+}
+
+.btn-banner1 a{
+    text-align: center;
+    background-color: rgb(40, 159, 159);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 24px;
+    transition: border-radius .5s;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    
+}
+.btn-banner1:hover a {
+    border-radius: 50px;
+}
+@media (max-width: 767px) {
+    .btn-banner1 {
+      position: fixed;
+      width: 100%;
+    }
+}
+
+
+/* foooter principal */
+
+.footer-principal{
+    background-color: #3E3B3B;
+    padding: 25px;
+}
+.parte1-footer, .parte2-footer, .parte3-footer{
+    width: 30%;
+    color: #fff
+}
+.linea-horizontal{
+    border-top: 2px solid #b8575e;
+    margin: auto; 
+    width: 50%; 
+    padding: 0; 
+}
+.parte1-footer i{
+    padding-left: 30px;
+}
+
+/* Scroltop */
+
+.html {
+    scroll-behavior: smooth;
+}
+  
+.goto-top{
+    position:fixed;
+    bottom:20px;
+    right: 50px;
+}
+.text-rojo{
+
+    color: #C3FFF3;
+    font-weight: bold;
+    
+}
+
+/* Scroltop */
+.nav{
+    padding: 20px
+}
+  
+
+
+
+
+
+/* Inicio de pagina web */
+
+.banner1-contacto{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+.text1-princ-contacto{
+    color: #fff;
+    padding: 50px;
+}
+
+.text2-princ-contacto{
+    color: #fff;
+}
+
+.text3-princ-contacto{
+    padding-top: 40px;
+}
+
+.parte2-contacto{
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+
+.parte2-1-contacto{
+    padding-top: 25px;
+}
+
+.parte2-1-contacto iframe{
+    width: 500px;
+    height: 500px;
+
+}
+
+
+.txt-emergencia-contacto{
+    border: 1px solid rgb(130, 48, 48);
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: 20px;
+
+}
+
+/* CONTACTO JS */
+
+.alertaRoja{
+    color: #fe8787;
+    font-weight: 500;
+    font-size: 18px;
+}
+.alertaVerde{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+}
+

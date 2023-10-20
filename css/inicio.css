@@ -1,0 +1,373 @@
+/* SCROLL */
+
+/* Scroltop */
+
+.html {
+    scroll-behavior: smooth;
+}
+  
+.goto-top{
+    position:fixed;
+    bottom:20px;
+    right: 50px;
+}
+.text-rojo{
+
+    color: #C3FFF3;
+    font-weight: bold;
+    
+}
+
+/* MENU */
+.nav{
+    width: 100%;
+    
+}
+
+.right-inicio{
+    width: 70%;
+    
+    
+}
+.right-inicio a{
+    padding-left: 10px;
+    color: aliceblue;
+}
+.navbar-nav .inicio-botton{
+    color: #de787d;
+}
+
+.left-inicio{
+    width: 50%;
+   
+}
+
+.tienda-nav, .agendar-nav {
+    color: #C3FFF3;
+}
+
+.nav-item{
+    padding-left: 10px;
+}
+
+/*video*/
+.banner1-inicio{
+	height: 70vh;
+}
+
+.bannera-inicio a{
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.right-inicio .nav-txt{
+    margin-left: 0px;
+    font-size: 21px;
+    color: #C3FFF3;
+}
+
+
+.btn-banner1 {
+    color: #fff;
+}
+
+.navbar-nav .inicio-botton{
+    color: #de787d;
+    
+}
+
+.btn-banner1 a{
+    text-align: center;
+    color: #fff;
+    background-color: rgb(40, 159, 159);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 24px; 
+    transition: border-radius .5s;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    
+}
+.btn-banner1:hover a {
+    border-radius: 50px;
+}
+@media (max-width: 767px) {
+    .btn-banner1 a{
+        display: none;
+    }
+   
+}
+.nav{
+    padding: 20px
+}
+
+
+/*---------- Ligthbox---------------*/
+
+
+/* estilo de la imagen utilizada para activar el modal */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+  /* opacidad al pasar el mouse sobre la foto */
+#myImg:hover {
+    opacity: 0.5;
+}
+  
+  
+  /* modal (fondo) */
+.modal {
+    display: none; 
+    position: fixed; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    /*width: 100%; 
+    height: 100%; */
+    overflow: auto; /* habilitar el scroll */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9); 
+}
+  
+  
+  /* contenido modal (imagen) */
+.modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 170px;
+    /*width: 40%;*/
+    /*tamaño de la foto ancho*/
+    max-width: 700px;
+}
+  
+  
+  /* título de la imagen modal - Igual ancho que la imagen */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0;
+    height: 150px;
+}
+  
+  
+  /* agregar animación CSS en el modo modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {
+      transform:scale(0)
+    }
+    to {
+      transform:scale(1)
+    }
+}
+  
+  
+  /*botón cerrar */
+.close {
+    position: absolute;
+    top: -10px;
+    right: 35px;
+    color: #de787d;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+    background-color: #000;
+}
+.close:hover,.close:focus {
+    color: rgb(71, 134, 129); 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+/* Pagina web inicio*/
+
+.txt1_inicio{
+    font-size: 50px;
+}
+
+.linea-horizontal {
+    border-top: 2px solid #b8575e;
+    margin: auto; /* Centra el div horizontalmente */
+    width: 50%; /* Ajusta el ancho del div para que ocupe la mitad del espacio disponible */
+    padding: 0; /* Elimina el padding predeterminado del div */
+}
+
+.banner2-inicio{
+    padding-top: 50px;
+    background-color: rgb(40, 159, 159);
+    padding-bottom: 100px;
+}
+.historia-inicio{
+    color: white;
+    padding-left: 70px;
+}
+.banner3-inicio{
+    padding: 100px;
+}
+
+.porqueNosotros-inicio{
+    padding-bottom: 150px;
+}
+
+.img-historia{
+    height: 350px;
+    width: 550px;
+    justify-content: center;
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* foooter principal */
+
+.footer-principal{
+    background-color: #3E3B3B;
+    padding: 25px;
+}
+.parte1-footer, .parte2-footer, .parte3-footer{
+    width: 30%;
+    color: #fff
+}
+
+.parte1-footer i{
+    padding-left: 30px;
+}
+  
+
+
+
+/* VIDEO FULL SCREEn*/
+
+.cursor{
+    cursor: pointer;
+}
+  
+  /* caja descriptiva del vídeo */
+#container {
+    border-radius: 8px;
+    max-width: 450px;
+    height: auto;
+    padding: 50px;
+    background: white;
+    margin: 100px auto;
+    box-shadow: 0 8px 6px -6px white;
+}
+  
+  
+  /* botón ver video*/
+#boton {
+    background: purple;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 7px;
+    margin: 0;
+}
+  
+  
+  /* clses lightbox */
+.lightbox {
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: scroll;
+    position: fixed;
+    display: none;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.lightbox-container {
+    position: relative;
+    max-width: 960px;
+    margin: 10% auto;
+    padding: 0 3%;
+    height: auto;
+    z-index: 10;
+}
+.lightbox-content {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.7);
+}
+.lightbox-close {
+    text-transform: uppercase;
+    /*background: transparent;*/
+    background-color: purple;
+    position: absolute;
+    /* alinear al centro el boton cerrar:  */
+    /*left:40%; */
+    right: 7%;
+    max-width: 960px;
+    font-weight: 300;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    /*altura del boton X*/
+    top: -40px;
+    /*display: block;*/  
+  }
+  
+  @media (max-width: 575px){
+    .lightbox-container {
+         margin-top: 150px !important;
+    }
+  }
+  
+  /*
+  @media screen (max-width: 768px) {
+    .lightbox-container {
+      margin-top: 10%;
+    }
+  }
+  */
+  
+  
+  
+  /* Vídeo responsive */
+  .video-container {
+    padding-bottom: 56.25%;
+    position: relative;
+    padding-top: 30px;
+    overflow: hidden;
+    height: 0;
+  }
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  @media (max-width: 575px){
+  .video-container{
+      width: 100% !important;
+      margin:0 auto;
+    }
+  }
+  
+  
+  
